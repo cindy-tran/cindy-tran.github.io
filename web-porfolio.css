@@ -1,0 +1,132 @@
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    font-family: Roboto, Arial;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+	color: grey;
+}
+
+a:hover {
+    color: blue;
+}
+
+.container {
+    text-align:center;
+
+}
+
+.container {
+    padding: 50px;
+    color: rgb(51, 51, 51);
+}
+
+
+
+body {
+    font-family: Roboto;
+}
+
+.container {
+    font-family: Roboto, Arial;
+}
+
+
+.bold {
+    font-weight: 900;
+}
+
+.blue {
+    color: blue;
+}
+
+.fab {
+    color: grey;
+    font-size: 30px;
+}
+
+.fab:hover {
+    color: blue;
+}
+
+
+
+.fas {
+    color: grey;
+    font-size: 30px;
+}
+
+.far {
+    color: grey;
+    font-size: 30px;
+}
+
+.far:hover {
+    color: blue;
+}
+
+.fas:hover {
+    color: blue;
+}
+
+
+.project {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project:hover .image {
+  opacity: 0.3;
+}
+
+.project:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}

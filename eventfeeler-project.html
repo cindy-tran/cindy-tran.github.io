@@ -1,0 +1,87 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<title>Eventfeeler</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="web-porfolio.css" rel="stylesheet" type="text/css">
+
+<style>
+.mySlides {display:none}
+</style>
+<body>
+        <ul>
+            <li><a href="file:///C:/Users/Peter/Desktop/cindy-tran/portfolio.html">PORTFOLIO</a></li>
+            <li><a class="active" href="file:///C:/Users/Peter/Desktop/cindy-tran/index.html">ABOUT</a></li>
+              
+              </ul>
+              
+<div class="container">
+
+
+<strong>Technologies Used:</strong> Javascript, HTML, CSS, React, Node.js, Express, MongoDB <br><br>
+
+Group project for UCI's Next Generations Search System project course. This is a web application that helps users locate events on the UCI Campus. Users can search events by time, location, and category, and leave comments on those events.
+<br>
+My role in this project was to design and develop the user interface. I consumed the application's REST API along with Google Maps API to display and reflect the data in the database.
+<br><br>Check out the project here: <a href="https://eventfeeler.herokuapp.com">Eventfeeler</a>
+<div class="w3-content" style="max-width:800px">
+        <img class="mySlides" src="file:///C:/Users/Peter/Desktop/cindy-tran/eventfeeler.png" style="width:100%">
+        <img class="mySlides" src="file:///C:/Users/Peter/Desktop/cindy-tran/eventfeeler search.png" style="width:100%">
+        <img class="mySlides" src="file:///C:/Users/Peter/Desktop/cindy-tran/eventfeeler info.png" style="width:100%">
+        <img class="mySlides" src="file:///C:/Users/Peter/Desktop/cindy-tran/eventfeeler comments.png" style="width:100%">
+        <img class="mySlides" src="file:///C:/Users/Peter/Desktop/cindy-tran/eventfeeler map.png" style="width:100%">
+        <img class="mySlides" src="file:///C:/Users/Peter/Desktop/cindy-tran/eventfeeler map info.png" style="width:100%">
+</div>
+
+
+
+<div class="w3-center">
+    <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+    </div>
+    <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+    <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+    <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+    <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+    <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+    <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("blue", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += "blue";
+}
+</script>
+</div>
+</body>
+</html>
+
+

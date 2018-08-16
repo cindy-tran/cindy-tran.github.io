@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<title>Reddit Radio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="web-porfolio.css" rel="stylesheet" type="text/css">
+
+<style>
+.mySlides {display:none}
+</style>
+<body>
+        <ul>
+            <li><a href="file:///C:/Users/Peter/Desktop/cindy-tran/portfolio.html">PORTFOLIO</a></li>
+            <li><a class="active" href="file:///C:/Users/Peter/Desktop/cindy-tran/index.html">ABOUT</a></li>
+              
+              </ul>
+              
+<div class="container">
+
+
+<strong>Technologies Used:</strong> Javascript, HTML, CSS, Bootstrap, jQuery<br><br>
+Web application that utilizes the public Reddit API and Last.fm API to make artist recommendations based on popular music posts on Reddit's /r/Music subreddit.
+<br>
+<br>
+Check out the project here: <a href="https://github.com/cindy-tran/reddit-radio">RedditRadio</a><br><br>
+
+<img src="file:///C:/Users/Peter/Desktop/cindy-tran/reddit radio pic.png">
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("blue", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += "blue";
+}
+</script>
+</div>
+</body>
+</html>
+
+
