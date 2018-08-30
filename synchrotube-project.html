@@ -3,7 +3,7 @@
 
 <!DOCTYPE html>
 <html>
-<title>Portfolio | SynchroTube</title>
+<title>Portfolio | Eventfeeler</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="web-porfolio.css" rel="stylesheet" type="text/css">
@@ -13,8 +13,8 @@
 </style>
 <body>
         <ul>
-                <li><a href="/portfolio.html">PORTFOLIO</a></li>
-                <li><a class="active" href="/index.html">ABOUT</a></li>
+            <li><a href="/portfolio.html">PORTFOLIO</a></li>
+            <li><a class="active" href="/index.html">ABOUT</a></li>
               
               </ul>
               
@@ -22,12 +22,26 @@
 
 
 
-<strong>Technologies Used:</strong> Javascript, HTML, CSS, Bootstrap, Node.js, Express<br><br>
-This is a web application that allows users to create and join channels so they can chat and watch videos synchronously.<br><br>
-<!-- Check out the project here: <a href="https://github.com/cindy-tran/pomodoro">Pomodoro Clock</a><br> -->
-<br>
 
-<img src="/synchrotube1.png">
+    <strong>Technologies Used:</strong> Javascript, HTML, CSS, Bootstrap, Node.js, Express<br><br>
+    This is a web application that allows users to create and join channels so they can chat and watch videos synchronously.<br><br>
+<div class="w3-content" style="max-width:800px">
+        <img class="mySlides" src="/synchrotube1.png" style="width:100%">
+        <img class="mySlides" src="/sychrotube2.png" style="width:100%">
+
+</div>
+
+
+
+<div class="w3-center">
+    <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+    </div>
+    <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+    <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+
+</div>
 
 <script>
 var slideIndex = 1;
@@ -60,5 +74,4 @@ function showDivs(n) {
 </div>
 </body>
 </html>
-
 
